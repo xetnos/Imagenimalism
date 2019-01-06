@@ -30,4 +30,4 @@ git clone https://github.com/thenestorperez/Imagenimalism.git
 
 * HTML5
 * CSS3
-** Flexbox
+* Flexbox
