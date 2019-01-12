@@ -1,0 +1,149 @@
+body, button, input, textarea {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header, footer {
+  background-color: #000;
+  height: 100px;
+}
+
+.sidebar-right {
+  background-color: blue;
+  color: white;
+  margin-bottom: 33px;
+}
+
+h1 {
+  color: red;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+@media screen and (min-width: 1120px) {
+  .content-area {
+    display: flex;
+  }
+  .sidebar-right {
+    flex: 0 0 320px; /* first 0 won't grow, 2nd won't shrink below 320px*/
+  }
+
+}
+
+/*-----------------------------
+ SYLING THE HEADER 
+ ---------------------------*/
+.site-header {
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 33px;
+}
+.site-info{ 
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  
+}
+.site-title{
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.site-description {
+  text-align: center;
+  color: #bebebd;
+  font-size: 1.2em;
+  margin-top: -.8;
+  font-style: italic;
+}
+.main-menu{
+  padding: 2em 2em;
+  color: #000;
+  background-color: #8a8882
+}
+
+@media screen and (min-width: 1120px) {
+  .site-title{
+    font-size:4em;
+  }
+}
+/*  */
+/* STYLIZING THE POSTS */
+/*  */
+
+.main-content-area {
+  padding: 2em;
+  
+}
+.post {
+  background-color: #f5e5e5;
+  margin-bottom: 33px;
+ 
+}
+.post a {
+  color: #000;
+  text-decoration: none;
+}
+
+.post-content h2 {
+  background-color: #b9b9b9;
+  color: #000;
+  margin:0;
+  margin-bottom: 25px;
+  padding: 50px;
+  text-align: center;
+  
+}
+.post-content p {
+  padding: 0 50px 50px;
+}
+
+@media screen and (min-width: 810px) {
+  .posts {
+    display:flex; /*al posts display side by side*/
+    flex-wrap: wrap; /*post move to the next line if there's no free space*/
+    justify-content: space-between;
+  }
+  .post {
+    flex-basis: 49%; /*this give me the 2% extra for the space-between*/
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .post-one-third {
+    flex-basis: 32%;
+  }
+  .post-half {
+    flex-basis: 49%;
+  }
+  .post-full {
+    flex-basis: 100%;
+  }
+}
+
+/* PHOTOS OF THE DAY */
+.section-header {
+  color: #ffffff;
+  font-size: 3em;
+  text-align: center;
+}
