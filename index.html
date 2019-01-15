@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://use.fontMinimalistic.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Charm|Roboto" rel="stylesheet">
+  <!-- LightBox -->
+  <link rel="stylesheet" href="css/lightbox.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <!-- CSS Stylesheet -->
@@ -17,7 +19,7 @@
 
 </head>
 
-<body>
+<body id="home">
 
   <div class="outer-wrap">
     <!-- HEADER -->
@@ -28,7 +30,13 @@
         <p class="site-description">Minimalism | HD | Images</p>
       </div>
 
-      <nav class="main-menu">HERE GOES THE MENU</nav>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#download-section">DOWNLOAD</a></li>
+          <li><a href="#gal-section">GALLERY</a></li>
+        </ul>
+      </nav>
 
     </header>
 
@@ -163,7 +171,7 @@
         </section>
 
         <!-- DOWNLOAD SECTION -->
-        <section class="download">
+        <section class="download" id="download-section">
           <h2 class="section-header">Download A Cool Image for Free</h2>
           <div class="download-card">
             <div class="download-img">
@@ -189,61 +197,61 @@
         </section>
 
         <!-- IMAGE SECTION -->
-        <section class="gallery">
+        <section class="gallery" id="gal-section">
           <h2 class="section-header">Extra Image Gallery</h2>
           <div class="gallery-images">
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/466697" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/466697" alt="img1">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/1116113" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/1116113" alt="img2">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/2490255" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/2490255" alt="img3">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/1298800" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/1298800" alt="img4">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/2067469" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/2067469" alt="img5">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/1343099" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/1343099" alt="img6">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/2059763" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/2059763" alt="img7">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/991516" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/991516" alt="img8">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/1154202" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/1154202" alt="img9">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/3368225" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/3368225" alt="img10">
               </a>
             </div>
             <div class="gallery-image">
-              <a href="#">
+              <a href="https://source.unsplash.com/collection/3737726" data-lightbox="gallery">
                 <img src="https://source.unsplash.com/collection/3737726" alt="img11">
               </a>
             </div>
@@ -253,8 +261,81 @@
       </main>
       <!-- SIDEBAR -->
       <div class="sidebar-right">
-        <h1>Sidebar Goes Here</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellendus libero est mollitia dolor ad corporis facilis beatae, eum sit dolores magni cumque, veniam possimus quae, dolorem non minima aspernatur! Nesciunt saepe perferendis reiciendis perspiciatis! Totam magni laudantium cumque maiores consequatur eligendi at ullam vel accusamus, animi commodi rem illo?</p>
+        <div class="widget">
+          <div class="widget-content">
+            <h3>BEST IMAGES</h3>
+            <nav class="sidebar-menu">
+              <ul>
+                <li>
+                  <a href="">Number 1</a>
+                </li>
+                <li>
+                  <a href="">Number 2</a>
+                </li>
+                <li>
+                  <a href="">Number 3</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="widget">
+          <div class="widget-content">
+            <h3>BEST IMAGES 2</h3>
+            <nav class="sidebar-menu">
+              <ul>
+                <li>
+                  <a href="">Number 4</a>
+                </li>
+                <li>
+                  <a href="">Number 5</a>
+                </li>
+                <li>
+                  <a href="">Number 6</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="widget">
+          <div class="widget-content">
+            <h3>BEST IMAGES</h3>
+            <nav class="sidebar-menu">
+              <ul>
+                <li>
+                  <a href="">Number 7</a>
+                </li>
+                <li>
+                  <a href="">Number 8</a>
+                </li>
+                <li>
+                  <a href="">Number 9</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="widget">
+          <div class="widget-content">
+            <h3>BEST IMAGES 4</h3>
+            <nav class="sidebar-menu">
+              <ul>
+                <li>
+                  <a href="">Number 10</a>
+                </li>
+                <li>
+                  <a href="">Number 11</a>
+                </li>
+                <li>
+                  <a href="">Number 12</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
 
 
@@ -263,7 +344,7 @@
 
     <!-- THE FOOTER -->
     <footer class="site-footer">
-      <h1>Footer</h1>
+      <p>By <a href="https://twitter.com/thenestorperez" target="_blank">thenestorperez</a> | 2018</p>
     </footer>
   </div>
 
@@ -273,6 +354,7 @@
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/lightbox.js"></script>
   <script src="js/main.js"></script>
 </body>
 

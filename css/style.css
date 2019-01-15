@@ -17,15 +17,38 @@ img {
   height: auto;
 }
 
-header, footer {
+ footer {
   background-color: #000;
-  height: 100px;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+  
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #2ba7e0;
+}
+footer .site-footer a:active {
+  text-decoration: none;
+  color: #fff;
+}
+header {
+  background-color: #000;
 }
 
 .sidebar-right {
-  background-color: blue;
+  background-color: #000000;
   color: white;
-  margin-bottom: 33px;
+  margin-bottom: 0px;
 }
 
 h1 {
@@ -50,7 +73,7 @@ p {
  SYLING THE HEADER 
  ---------------------------*/
 .site-header {
-  height: 400px;
+  height: 700px;
   display: flex;
   flex-flow: column wrap;
   margin-bottom: 33px;
@@ -82,6 +105,57 @@ p {
   background-color: #8a8882
 }
 
+
+/*our menus styles*/
+.menu-section {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+}
+
+.main-menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background-color: #dcdde1;
+}
+
+.main-menu li a {
+	text-decoration: none;
+	color: #000;
+  padding: 2em;
+  font-size: 1.1em;
+  font-weight: bold;
+	display: block;
+	transition: all 1s ease;
+}
+
+.main-menu li a:hover {
+  background-color: #000;
+  color: #d3d3d3;
+}
+
+.main-menu-heading {
+	font-size: 2em;
+	font-weight: normal;
+}
+
+@media screen and (min-width: 810px) {
+
+	.main-menu ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.main-menu ul li {
+		flex-grow: 1;
+		flex-basis: auto;
+		flex-shrink: 0;
+	}
+
+}
+
 @media screen and (min-width: 1120px) {
   .site-title{
     font-size:4em;
@@ -96,7 +170,7 @@ p {
   
 }
 .post {
-  background: linear-gradient(to right, #8e9eab, #181818); 
+  background: linear-gradient(to right, #9fa5aa, #757474); 
   margin-bottom: 33px;
  
 }
@@ -235,7 +309,7 @@ p {
   color: #fff;
   padding: 1em 1em;
   font-size: 2em;
-  background: linear-gradient(to right, #807d7da4, #3836336c);
+  background: linear-gradient(to right, #807d7da4, #8b8a876c);
 }
 .download-rating .rate {
   font-size: 2.5em;
@@ -267,12 +341,13 @@ p {
   .download-content {
     display: flex;
     flex-flow: row;
+    flex-grow: 3;
   }
   .download-content a, .download-rating {
-    flex-grow: 4;
+    flex-grow: 3;
   }
   .download-info {
-    flex-grow: ;
+    flex-grow: 1;
   }
 }
 
@@ -303,4 +378,39 @@ p {
 }
 .gallery-image:nth-child(4n+4){
   flex-basis: 380px;
+}
+
+/* SIDEBAR */
+.sidebar-right {
+  padding: 2em;
+  color: #000;
+}
+.widget {
+  background-color: #fff;
+  margin-bottom: 2em;
+}
+.widget-content {
+  padding: .5em 2em;
+}
+.sidebar-right ul {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+.sidebar-right ul a {
+  display: block;
+  padding-bottom: .4em;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+  .sidebar-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .widget {
+    flex-basis: 48.8%;
+  }
 }
