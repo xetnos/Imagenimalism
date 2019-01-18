@@ -1,5 +1,5 @@
 # Imagenimalism
-A website build with Flexbox about Minimalism Images from https://unsplash.com
+A website build with Flexbox about Minimalism Images from [Unspa](https://unsplash.com)
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ What things you need to install the software and how to install them
 1. Clone the repo
 
 ```
-git clone https://github.com/thenestorperez/pomodoro-js.git
+git clone https://github.com/thenestorperez/Imagenimalism.git
 ```
 
 2. Open Project Folder
