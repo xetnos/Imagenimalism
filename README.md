@@ -30,12 +30,6 @@ git clone https://github.com/thenestorperez/pomodoro-js.git
 
 * HTML5
 * CSS3
-* Javascript
+* Flexbox
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Special thanks to:
-
-* [Dylan Israel](https://twitter.com/PizzaPokerGuy) aka [PizzaPokerGuy](https://github.com/PizzaPokerGuy)
