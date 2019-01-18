@@ -1,5 +1,5 @@
 # Imagenimalism
-A website build with Flexbox about Minimalism Images from [Unspa](https://unsplash.com)
+A website build with Flexbox about Minimalism Images from [Unsplash](https://unsplash.com)
 
 ## Getting Started
 
