@@ -38,4 +38,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Special thanks to:
 
-* [Dylan Israel](https://twitter.com/PizzaPokerGuy) aka PizzaPokerGuy
+* [Dylan Israel](https://twitter.com/PizzaPokerGuy) aka [PizzaPokerGuy](https://github.com/PizzaPokerGuy)
